@@ -1,6 +1,5 @@
 body {
 	height: 100vh;
-	/* 배경 이미지를 넣어주세요 */
 	background-image: url('images/background.jpeg');
 	background-color: #ff9c00;
 	background-size: cover;
@@ -10,7 +9,6 @@ body {
 }
 
 .container {
-	/* 내부 여백의 상하 50px, 좌우 0으로 설정하는 코드 작성해주세요 */
 	padding: 50px 0px;
 	display: flex;
 	flex-direction: column;
@@ -21,14 +19,10 @@ body {
 
 .container .pokemons {
 	flex-wrap: wrap;
-	/* 요소들의 메인 축을 가로로 설정하는 코드를 입력해주세요 */
 	display: flex;
 	justify-content: center;
-	/* 요소의 최대 가로 크기를 700px로 설정해주세요 */
 	width: 700px;
-	/* 내부 여백에 상하 40px, 좌우 20px 적용해주세요 */
 	padding: 40px 20px;
-	/* 그 밖에 필요한 속성들 추가 */
 	gap: 10px;
 	
 
@@ -38,15 +32,11 @@ body {
 
 .container .pokemons .pokemon {
 	box-sizing: border-box;
-	/* 너비 80px, 높이 84px, 테두리를 3px 실선 하얀색으로 지정해주는 코드를 각각 작성해주세요 */
 	width: 80px;
 	height: 84px;
 	border: 3px solid white;
-	/* transition 속성을 적용해주세요 */
 	transition: all 0.3s ease;
-	/* transform 속성을 적용해주세요 */
 	transform: skew(-10deg);
-	/* 그 밖에 필요한 속성 추가 */
 	background-color: black;
 	border-radius: 8px;
 	cursor: pointer;
@@ -55,10 +45,9 @@ body {
 
 }
 
-/* 마우스의 포인터를 각 요소에 올렸을때 발생하는 효과를 적용하는 코드들 작성하기 (가상 선택자 활용) */
 .container .pokemons .pokemon:hover {
-	background-color: orange; /* 주황색 배경으로 전환 */
-	transform: scale(1.2) skew(-10deg); /* 살짝 커지게 */
+	background-color: orange; 
+	transform: scale(1.2) skew(-10deg); 
 	box-shadow: 0 0 15px;
 	z-index: 1;
 }
@@ -69,15 +58,11 @@ body {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: 90px;
-	/* 그 밖에 필요한 속성 추가 */
 	margin-left: -20%;
 
 
 }
 
-/* :nth-child() 가상클래스가 무엇인지 알아보고, 이를 적용하여 각 요소에 포켓몬 이미지 넣기
-// :nth-child(n) 부모안에 모든 요소 중 n번째 요소 
-(32개의 반복된 코드가 필요하며, 이미지는 background-image 속성 이용하기) */
 .container .pokemons .pokemon:nth-child(1) .image {
 	background-image: url('images/pokemon1.png');
 }
@@ -176,14 +161,11 @@ body {
 }
 
 .container .logo {
-	/* 이미지 요소가 너무 크네요! 요소의 최대 가로 크기를 임의로 설정해주세요 */
-	/* margin을 이용해서 요소를 가운데 정렬 해주세요  */
 	max-width: 300px;
 	margin: 10px auto;
 }
 
 .container .logo img {
-	/* width를 이용해서 로고를 부모 요소의 최대 너비에 맞춰서 출력할 수 있는 코드 작성해주세요 */
 	width: 100%;
 	display: block
 }
