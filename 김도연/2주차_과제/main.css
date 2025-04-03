@@ -9,7 +9,6 @@ body {
 
 .container {
   padding: 50px 0px;
-  flex-direction: column;
 }
 
 .container .pokemons {
