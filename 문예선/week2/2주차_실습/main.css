@@ -1,0 +1,49 @@
+/* 📌 body에 배경색 #d2f3f8 과 가운데 정렬 */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: lightblue;
+}
+
+/* 📌 .container 구조와 박스 스타일링 */
+.container {
+  display: flex;
+  border-radius: 10px;/* 4. 10px만큼 둥글게 */
+  overflow: hidden;
+  width: 500px; height: 300px;/* 2. 가로 500px 세로 300px */
+  background-color: white;/* 4. 배경색 설정하기 (container가 무엇인지 확인하면 바로 알 수 있어요)*/
+}
+
+/* 📌 .item 구성 */
+.container .item {
+  flex: 1;
+}
+
+/* 📌 이미지 삽입 및 스타일링 */
+.container .item img {
+  width: 100%;
+}
+
+/* 📌 텍스트 영역 스타일링 */
+.container .item .content-wrapper {
+  box-sizing: border-box;
+  padding: 20px;/*  1. 패딩값 20px */
+  width: 100% ;/* 2. 너비 스스로 정해보기! */
+}
+
+.container .item .content-wrapper .tag {
+  color: purple;/* 3. 색 설정하기! */
+}
+
+.container .item .content-wrapper .title {
+  font-size: 30px;/* 3. 글자 크기 30px */
+  margin-top: 2px;
+  font-weight: 600;
+}
+
+.container .item .content-wrapper .description {
+  color: gray;/* 3. 색상 gray,  */
+  margin-top: 20px;
+}
