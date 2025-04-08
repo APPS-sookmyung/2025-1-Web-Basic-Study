@@ -1,56 +1,61 @@
-.body {
+body {
   height: 100vh;
-  background-image: url("images/background.jpeg");
+  background-image: url(images/background.jpeg); /* 배경 이미지를 넣어주세요 */
+  background-color: #ff9c00;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .container {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 10px;
-  justify-content: center;
-  width: 700px;
-  padding: 50px 0px; 
+  padding: 50px 0px; /* 내부 여백의 상하 50px, 좌우 0으로 설정하는 코드 작성해주세요 */
 }
 
 .container .pokemons {
-  display: grid;
-  justify-content: center;
-  width: 700px; 
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center; /* 요소들의 메인 축을 가로로 설정하는 코드를 입력해주세요 */
+  width: 700px; /* 요소의 최대 가로 크기를 700px로 설정해주세요 */
+  padding: 40px 20px; /* 내부 여백에 상하 40px, 좌우 20px 적용해주세요 */
+  transform: skew(-10deg);
+  margin: 0 auto;
+
+  /* 그 밖에 필요한 속성들 추가 */
 }
 
 .container .pokemons .pokemon {
-  display: flex;
   box-sizing: border-box;
-  width: 100px;
-  height: 100px;
-  border: 3px solid white; 
-  transition: transform 0.5s ease-in-out, background-color 0.5s; 
-  transform: scale(1.2); 
-  background-color: black;
-  background-size: cover;
-  background-position: center; 
+  width: 80px;
+  height: 84px;
+  border: 3px solid white; /* 너비 80px, 높이 84px, 테두리를 3px 실선 하얀색으로 지정해주는 코드를 각각 작성해주세요 */
+  transition: transform 0.5s ease-in-out, background-color 0.5s; /* transition 속성을 적용해주세요 */
+  /* transform 속성을 적용해주세요 */
+  background-color: #444444;
+  margin-bottom: 10px;
+  margin-right: 5px;
+  margin-left: 5px;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+
+  /* 그 밖에 필요한 속성 추가 */
 }
 
-.container .pokemons .pokemon:hover {
+.pokemon:hover .image {
   background-color: orange;
-  border: 3px solid white; /
-}
+  border-radius: 10px;
+  border: 3px solid white;
+  transform: scale(1.08);
+} /* 마우스의 포인터를 각 요소에 올렸을때 발생하는 효과를 적용하는 코드들 작성하기 (가상 선택자 활용) */
 
 .container .pokemons .pokemon .image {
-  width: 100%;
+  width: 140%;
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-  border: 3px solid white;
-  gap: 10px;
-  padding: 20px; 
+  background-size: 90px;
+  /* 그 밖에 필요한 속성 추가 */
 }
 
 .pokemon:nth-child(1) .image {
@@ -122,7 +127,7 @@
 .pokemon:nth-child(23) .image {
   background-image: url("images/pokemon23.png");
 }
-.pokemon:nth-child(24) .image{
+.pokemon:nth-child(24) .image {
   background-image: url("images/pokemon24.png");
 }
 .pokemon:nth-child(25) .image {
@@ -148,14 +153,17 @@
 }
 .pokemon:nth-child(32) .image {
   background-image: url("images/pokemon32.png");
-}
+} /* :nth-child() 가상클래스가 무엇인지 알아보고, 이를 적용하여 각 요소에 포켓몬 이미지 넣기 
+(32개의 반복된 코드가 필요하며, 이미지는 background-image 속성 이용하기) */
 
 .container .logo {
-  width: 100px;
-  height: auto;
-  margin: 0 auto; 
+  width: 100%;
+  max-width: 300px; /* 이미지 요소가 너무 크네요! 요소의 최대 가로 크기를 임의로 설정해주세요 */
+  margin: 0 auto;
+  display: block; /* margin을 이용해서 요소를 가운데 정렬 해주세요  */
 }
 
 .container .logo img {
-  width: 100px;
+  width: 100%;
+  /* width를 이용해서 로고를 부모 요소의 최대 너비에 맞춰서 출력할 수 있는 코드 작성해주세요 */
 }
