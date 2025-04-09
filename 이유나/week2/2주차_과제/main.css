@@ -1,10 +1,6 @@
 body {
   height: 100vh;
   background-image: url("images/background.jpeg");
-<<<<<<< HEAD
-=======
-  background-color: #ff9c00;
->>>>>>> e8ebac2491ed2ecc07e5470d38bd48cbb7d7bfd3
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -18,16 +14,10 @@ body {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-<<<<<<< HEAD
   gap: 10px; /*margin보다 gap 선호*/
   justify-content: center; /*가운데 정렬*/
-=======
-
->>>>>>> e8ebac2491ed2ecc07e5470d38bd48cbb7d7bfd3
   max-width: 700px;
-
   padding: 40px 20px;
-
   margin: auto;
 }
 
@@ -35,49 +25,33 @@ body {
   box-sizing: border-box;
   width: 80px;
   height: 84px;
-<<<<<<< HEAD
   border-radius: 8px;
-  border: 3px solid white; /*3줄을 한줄로 합쳐쳐쓰기*/
+  border: 3px solid white; /*3줄을 한줄로 합쳐쓰기*/
   transition: background-color 0.3s linear, transform 0.3s linear;
-  display: inline-block;
-  background-color: #353535;
-  transform: scale(1) skew(-12deg);
 }
 
 .container .pokemons .pokemon:hover {
   display: inline-block;
   transition: 0.3s linear;
   transform: scale(1.3) skew(-12deg); /*scale 더크게 설정*/
-=======
-  border-width: 3px;
-  border-style: solid;
-  border-color: white;
-  border-radius: 8px;
-  transition: background-color 0.3s linear, transform 0.3s linear;
-  margin: 10px auto;
-}
-
-.pokemon {
-  display: inline-block;
-  background-color: #353535;
-  transform: skew(-12deg);
-  position: relative;
-}
-
-.pokemon:hover {
-  display: inline-block;
-  transform: skew(-12deg) scale(1.3);
->>>>>>> e8ebac2491ed2ecc07e5470d38bd48cbb7d7bfd3
   background-color: #ff9c00;
   z-index: 10;
 }
 
-.pokemon .image {
+.image {
   width: 100%;
   height: 100%;
   position: absolute;
   background-size: contain;
   transform: none;
+}
+
+.pokemon {
+  /*요소를 하나의 셀렉터로 만들기*/
+  display: inline-block;
+  background-color: #353535;
+  transform: scale(1) skew(-12deg);
+  margin: auto;
 }
 
 .pokemon:nth-child(1) {
@@ -211,18 +185,10 @@ body {
 
 .container .logo {
   max-width: 300px;
-<<<<<<< HEAD
   margin: 0 auto; /*명확하게 좌우 가운데 정렬 표현*/
-=======
-
-  margin: auto;
->>>>>>> e8ebac2491ed2ecc07e5470d38bd48cbb7d7bfd3
 }
 
 .container .logo img {
   width: 100%;
-<<<<<<< HEAD
   height: auto; /*width와 함께 작성하여 이미지 비율 더 안정적으로 유지*/
-=======
->>>>>>> e8ebac2491ed2ecc07e5470d38bd48cbb7d7bfd3
 }
