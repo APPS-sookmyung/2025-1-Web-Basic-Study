@@ -1,7 +1,6 @@
 body {
   height: 100vh;
   background-image: url(images/background.jpeg);
-  background-color: #ff9c00;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -12,17 +11,15 @@ body {
 }
 
 .container .pokemons {
-  flex-wrap: wrap;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
-  max-width: 700px;
+  max-width: 650px;
   padding: 40px 20px;
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: repeat(4, 1fr);
   justify-content: center;
   align-items: center;
   margin: auto;
+  gap: 10px;
 }
 
 .container .pokemons .pokemon {
@@ -33,14 +30,14 @@ body {
   border-style: solid;
   border-color: white;
   border-radius: 10px;
-  transition: ease-in-out;
+  transition: transform 0.3s ease-in-out;
   transform: skew(-15deg);
   overflow: hidden;
   background-color: black;
 }
 
 .container .pokemons .pokemon:hover {
-  transform: scale(1.2) skew(-15deg);
+  transform: scale(1.2);
   background-color: orange;
 }
 
@@ -163,4 +160,6 @@ body {
 
 .container .logo img {
   width: 100%;
+  height: auto;
+  display: block;
 }
