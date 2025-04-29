@@ -28,6 +28,9 @@ body {
   border-radius: 8px;
   border: 3px solid white; /*3줄을 한줄로 합쳐쓰기*/
   transition: background-color 0.3s linear, transform 0.3s linear;
+  background-color: #353535;
+  transform: scale(1) skew(-12deg);
+  margin: auto;
 }
 
 .container .pokemons .pokemon:hover {
@@ -44,14 +47,6 @@ body {
   position: absolute;
   background-size: contain;
   transform: none;
-}
-
-.pokemon {
-  /*요소를 하나의 셀렉터로 만들기*/
-  display: inline-block;
-  background-color: #353535;
-  transform: scale(1) skew(-12deg);
-  margin: auto;
 }
 
 .pokemon:nth-child(1) {
