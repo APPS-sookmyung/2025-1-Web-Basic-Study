@@ -121,7 +121,7 @@ getMultipleBtn.addEventListener("click", async () => {
   }
 });
 
-// 페이지 로드시 자동으로 하나의 고양이 사실 가져오기
+// 페이지 로드시 자동으로 하나의 고양이 사실 가져오기 !!
 window.addEventListener("load", () => {
   getFactBtn.click();
 });
