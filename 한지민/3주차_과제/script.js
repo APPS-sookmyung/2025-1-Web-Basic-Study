@@ -101,10 +101,11 @@ getFactBtn.addEventListener("click", async () => {
 // - `fetchFacts(count)`를 호출해 데이터를 가져온 후 화면에 표시한다.
 getMultipleBtn.addEventListener("click", async () => {
   //  1. 입력된 개수 가져오기 (기본값 1) 힌트: parseInt 사용
-  const count = parseInt(factCount.value);
+  const count = parseInt(factCount.value) || 1;
   //  2. 유효한 개수(1~5)인지 확인 -> 유효하지 않으면 에러 메시지 표시 "Please enter a number between 1 and 5"
   if (count < 1 || count > 5) {
     showError("Please enter a number between 1 and 5");
+    return;
   }
   //  3. API 호출하여 여러 개의 팩트 가져오기 (힌트: fetchFacts(count) 사용)
   const facts = await fetchFacts(count);
