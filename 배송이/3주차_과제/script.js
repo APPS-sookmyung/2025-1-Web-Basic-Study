@@ -54,6 +54,7 @@ function displayFacts(facts) {
 // - 요청이 실패하면 에러 메시지를 출력한다.
 // - 로딩 표시 (`showLoading`)와 숨기기 (`hideLoading`)를 적절히 적용한다.
 async function fetchFacts(count = 1) {
+
   //  1. 사용자가 선택한 언어(language) 가져오기
   const lang = languageSelect.value;
   //  2. API 요청 URL 생성!!!! 힌트: const url='$_?_= $_&_=$_'
@@ -62,6 +63,7 @@ async function fetchFacts(count = 1) {
   try {
     //  3. 로딩 상태 표시
     showLoading();
+
     // ✅ 4. API 요청을 보내고 응답을 기다림
     // → fetch()를 사용하여 네트워크 요청을 보낸다.
     const Response = await fetch(url);
