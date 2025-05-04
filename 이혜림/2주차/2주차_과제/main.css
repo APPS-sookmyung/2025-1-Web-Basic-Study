@@ -8,7 +8,12 @@ body {
 }
 
 .container {
-  padding: 50px 0px; /* 내부 여백의 상하 50px, 좌우 0으로 설정하는 코드 작성해주세요 */
+  padding: 50px 0px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* 내부 여백의 상하 50px, 좌우 0으로 설정하는 코드 작성해주세요 */
 }
 
 .container .pokemons {
@@ -19,6 +24,7 @@ body {
   padding: 40px 20px; /* 내부 여백에 상하 40px, 좌우 20px 적용해주세요 */
   transform: skew(-10deg);
   margin: 0 auto;
+  gap: 5px 5px;
 
   /* 그 밖에 필요한 속성들 추가 */
 }
@@ -40,7 +46,7 @@ body {
   justify-content: center;
 }
 
-.pokemon:hover .image {
+.container .pokemons .pokemon:hover {
   background-color: orange;
   border-radius: 10px;
   border: 3px solid white;
