@@ -38,8 +38,6 @@ body {
   overflow: hidden;
   display: flex;
   justify-content: center;
-
-  /* 그 밖에 필요한 속성 추가 */
 }
 
 .pokemon:hover .image {
