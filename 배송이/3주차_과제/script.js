@@ -65,8 +65,8 @@ async function fetchFacts(count = 1) {
     showLoading();
 
     // ✅ 4. API 요청을 보내고 응답을 기다림
-    // → fetch()를 사용하여 네트워크 요청을 보낸다.
-    const Response = await fetch(url);
+    // → fetch()를 사용하여 네트워크 요청을 보낸다
+    const response = await fetch(url);
 
     /* HTTP 상태 코드를 체크하여 응답이 정상인지 확인. →  성공하면  응답을 JSON 형식으로 변환하여 데이터 반환. 
     if 응답 없을 시 에러 발생 메세지 작성 "Failed to fetch cat facts" */
