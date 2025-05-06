@@ -56,7 +56,7 @@ function displayFacts(facts) {
 async function fetchFacts(count = 1) {
   try {
     const language = document.getElementById("language").value;
-    const url = `https://meowfacts.herokuapp.com/?lang=${language}&count=${count}`;
+    const url = `${API_URL}?count=${count}&lang=${language}`;
     //  1. 사용자가 선택한 언어(language) 가져오기
     //  2. API 요청 URL 생성!!!! 힌트: const url='$_?_= $_&_=$_'
 
