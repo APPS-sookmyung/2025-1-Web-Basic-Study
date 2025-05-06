@@ -1,0 +1,48 @@
+<문자열 매소드>
+toUpperCase : 모두 대문자
+toLowerCase : 모두 소문자
+trim : 공백제거
+trimstart : 앞부분 공백 제거
+trimend : 뒷부분 공백 제거
+repeat : 새로운 문자열 반복 (원본 string은 변경 x)
+padstart : 앞쪽에 지정한 문자가 들어감
+padend : 뒤쪽에 지정한 문자가 들어감
+index of : 검색키워드를 지정하면 키워드에 해당되는 위치를 알려줌 (0부터)
+includes : 키워드를 찾았을 경우 - true, 찾지 못했을 경우 - False
+startsWith : 지정한 문자로 시작하면 true, 못 시작하면 False
+endwith : 지정한 문자로 끝나면 true, 못 끝나면 False
+replace : 주어진 문자열로 교체하여 새로운 열로 반환
+substring : 주어진 시작 Index ~ 종료 index 이전까지 출력
+split : 주어진 구분자로 잘라서 배열
+slice : 주어진 인자에 따라 문자열을 새롭게 추출, 음수로도 지정 가능
+
+<배열 매소드>
+push : 새로운 요소 배열에 추가
+pop : 끝에서부터 하나의 요소 제거
+unshift : 배열에 앞에 적용되는 push 매소드
+shift : 인자 앞부분에서 하나씩 pop
+forEach : 주어진 요소를 각각 실행, 요소의 인자들을 각각 실행
+map : forEach와 비슷, 새로운 배열 반환
+includes : 요소가 포함 - True, 요소 포함 x - False
+find : 조건을 만족하는 첫번째 요소만 return
+findIndex : 판별함수를 만족하는 첫번째 index 요소를 return
+fill : 지정한 값으로 배열을 모두 변경
+slice : 배열의 복사본을 조각내서 새로운 배열로 바노한
+splice : 필수인자인 시작 index 지정, 두번째 인자에 제거할 요소 지정도 가능
+         제거할 요소에 채워놓을 수도 있음
+join : 구분할 쉼표까지 새로운 문자열로 반환
+concat : 인자로 주어진 배열 합 -> 기존 배열에 합침 -> 새로운 배열로 반환
+filter : 참인 요소들만 모아 반환
+reduce : 누산기 (acc) + 현재요소 (value) 값을 가짐
+
+<객체심화>
+for in : 객체에서 사용
+getElementbyld : Id 값 입력
+getElementByclassName : class 값 입력
+tagname : tag 이름 입력
+queryselector : 다수의 요소들을 배열처럼 가져오기 위해 요소 선택
+createElement : 새로운 요소 생성
+event : 동작이나 사건 발생
+addEventListenr : 이벤트핸들러 함수
+module : 코드를 모아두는 하나의 파일
+NamedExports : 하나의 변수에서 여러 개를 내보낼  수 있음
