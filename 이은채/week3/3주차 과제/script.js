@@ -55,7 +55,7 @@ function displayFacts(facts) {
 // - 로딩 표시 (`showLoading`)와 숨기기 (`hideLoading`)를 적절히 적용한다.
 async function fetchFacts(count = 1) {
     const selectedLanguage = languageSelect.value;
-    const url = `${API_URL}/?count=${count}&lang=${selectedLanguage}`;
+    const url = `${API_URL}?count=${count}&lang=${selectedLanguage}`;
 
   try {
     //  3. 로딩 상태 표시
@@ -96,7 +96,7 @@ getMultipleBtn.addEventListener("click", async () => {
         return;
     }
     const facts = await fetchFacts(count);
-    if (facts) {
+    if (Array.isArray(facts) && facts.length > 0) {
         displayFacts(facts);
     }
 });
