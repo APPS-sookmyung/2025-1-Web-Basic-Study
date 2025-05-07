@@ -57,7 +57,7 @@ async function fetchFacts(count = 1) {
   //  1. 사용자가 선택한 언어(language) 가져오기
   const language = document.querySelector("#language").value;
   //  2. API 요청 URL 생성!!!! 힌트: const url='$_?_= $_&_=$_'
-  const url = `https://meowfacts.herokuapp.com/?count=${count}&lang=${language}`;
+  const url = `${API_URL}?count=${count}&lang=${language}`;
 
   try {
     //  3. 로딩 상태 표시
@@ -79,7 +79,7 @@ async function fetchFacts(count = 1) {
     return data.data;
   } catch (err) {
     //  7. 에러 발생 시 사용자에게 알림
-    alert(err.message);
+    showError(err.message);
   } finally {
     // 8. 요청이 끝나면 로딩 상태 숨기기
     hideLoading();
@@ -107,7 +107,7 @@ getMultipleBtn.addEventListener("click", async () => {
   const count = parseInt(factCount.value, 10) || 1;
   //  2. 유효한 개수(1~5)인지 확인 -> 유효하지 않으면 에러 메시지 표시 "Please enter a number between 1 and 5"
   if (count < 1 || count > 5) {
-    alert("Please enter a number between 1 and 5");
+    showError("Please enter a number between 1 and 5");
     return;
   }
   //  3. API 호출하여 여러 개의 팩트 가져오기 (힌트: fetchFacts(count) 사용)
