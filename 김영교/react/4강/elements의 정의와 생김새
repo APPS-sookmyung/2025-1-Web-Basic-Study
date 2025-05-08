@@ -1,0 +1,33 @@
+elements란?
+리액트 앱을 구성하는 가장 작은 블록들
+
+개발자도구에서 elements는 DOM elements
+
+실제 브라우저의 DOM에 존재하는 element는 dom element
+virtual dom에 존재하는 element가 react element
+ 
+
+react element
+-화면에서 보이는 것들을 기술
+
+element생김새
+-자바스크립트 객체 형태로 존재
+-마음대로 변경 불가
+//버튼을 나타내기 위한 element
+type: 'button',
+props: {
+    className: 'bg-greem',
+    childrem: {
+        type: 'b'.
+        props: {
+            chlidren: 'Hello, element!'
+        }
+    }
+}
+
+랜더링 후 
+<button class='bg-green'>
+    <b>
+        Hello, element!
+    </b>
+</button>

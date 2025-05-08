@@ -1,0 +1,41 @@
+// jsx: a syntax extension to JavaScript
+//     : js + XML/HTML
+// code example
+// const element =<h1> hello, world!</h1>;
+
+jsx 역할
+: xml html 코드로 자바스크립트로 변환하는 과정
+React.createElement(
+    type, 
+    [props],
+    [...children]
+)
+
+const element=(
+    <h1 classNote='greeting'>
+        Hello,world!
+    </h1>
+)
+
+const element =React.createElement(
+    'h1',
+    {className: 'greeting'},
+    'hello world!'
+)
+
+React.createElement()의 결과로 아래 객체(React element) 생성
+const element={
+    type:'h1',
+    props:{
+        className: 'greeting',
+        children: 'Hello, world!'
+    }
+}
+이 객체들을 읽어서 DOM을 만드는데 사용하고 최신 상태 유지
+
+createElement의 파라미터
+React.createElement(
+    type, //element의 유형-html 태그나, react 컴포넌트
+    [prps], //속성들
+    [...children] //현재 element 가 포함하고 있는 자식 element
+)

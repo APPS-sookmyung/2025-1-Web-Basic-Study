@@ -1,0 +1,12 @@
+1.불변성
+한번 생성된 element는 변하지 않음
+element 생성 후에는 children이나 attributes를 바꿀 수 없다
+
+붕어빵틀: component
+붕어빵들: element 변경불가
+
+element 렌더링하기
+Root DOM Node 최상단의 노드
+
+렌더링된 element를 업데이트하기
+-다시 생성해야함

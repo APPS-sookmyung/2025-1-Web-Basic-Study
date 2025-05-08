@@ -1,0 +1,103 @@
+자바스크립트의 자료형
+: 데이터를 다루기 위해 미래 정해놓은 데이터의 유형
+: 일반적으로 변수를 선언하는 시점에 해당 변수의 자료형이 결정되지만, js에서는 변수에 데이터가 대입되는 시점에 변수의 자료형이 결정되지만
+
+
+//number type
+let n1=1234;
+let n2=5.678;
+
+//string type
+let s1='hello';
+let s2='world';
+
+//boolean type
+let b1=true;
+let b2=false;
+
+//null type
+let n=null;
+
+//undefined type
+let u1;
+let u2=undefined;
+
+//array type
+let arr=[1,2,3,4];
+
+//object type
+let obj= { a: "apple", b: "banana" , c: "carriot"};
+
+//number 타입으로만 이루어진 배열
+let arr1=[1,2,3,4,5];
+
+//string 타입으로만 이루어진 배열
+let arr2=["h", "e", "l", "l", "o"];
+
+//number type & string type array
+let arr3=[1,"h", 2, "i"];
+
+//array using various data type
+let arr4=[trye, 1, undefined, false, "e", 2, null, "i"];
+
+//array using string type as value
+let o1={a: "apple", b: "banana", c: "carrot"};
+
+//array using number type as value
+let o2={a:1, b:2, c:4};
+
+//array using various type as value
+let o3={a:"hello", b:100, c: [1,2,3,4]};
+
+//array using array as value
+let o4={
+    a:{a1:1, a2:2},
+    b:{b1:1, b2:2},
+    c:{c1:5, c2:6}
+};
+
+
+
+
+<<연산자>>
+
+대입연산자 assignment operator
+
+산술연산자 arithmetic operators
+console.log(a+b);
+console.log(a-b);
+console.log(a*b);
+console.log(a/b);
+console.log(a%b);
+console.log(a**b);
+
+증감연산자 ++, --
+postfix: a++ ➡️ 증감 전에 값을 받아내고 이후에 변수 증감
+prefix: ++a ➡️ 변수 증감, 이후에 증감된 값 반환
+
+관계연산자 comparison operators < > <= =>
+
+동등연산자 equality operators  ==  !=
+
+일치연산자 strict equality operators 
+=== ➡️ 값과 자료형 모두 동일
+!== ➡️ 값이나 자료형이 같지 않다
+
+이진논리연산자 binary logical operators && ||
+
+조건부연산자 conditional operator
+조건식 ? true일경우 : false일 경우
+
+
+
+
+<<함수>>:
+1. function statement
+function sum(a,b){
+    return a+b;
+}
+
+2. arrow function statement
+const multiply = (a,b)=>{
+    return a*b;
+}
