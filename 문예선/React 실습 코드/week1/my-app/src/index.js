@@ -14,7 +14,7 @@ const root = createRoot(document.getElementById("root"));
 setInterval(() => {
   root.render(
     <React.StrictMode>
-      <Library />
+      <Clock />
     </React.StrictMode>
   );
 }, 1000);
