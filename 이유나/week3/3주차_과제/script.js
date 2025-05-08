@@ -90,7 +90,7 @@ getFactBtn.addEventListener("click", async () => {
   //  1. API에서 하나의 랜덤한 고양이 사실 가져오기
   const facts = await fetchFacts(1);
   //  2. 응답 데이터가 있을 경우, 화면에 표시 (단일 팩트는 문자열로 표시)
-  if (facts) {
+  if (Array.isArray(facts) && facts.length > 0) {
     displayFacts(facts[0]);
   }
 });
@@ -108,13 +108,12 @@ getMultipleBtn.addEventListener("click", async () => {
     return;
   }
   //  3. API 호출하여 여러 개의 팩트 가져오기 (힌트: fetchFacts(count) 사용)
-  fetchFacts(count).then(function (facts) {
-    //  4. 응답 데이터가 있을 경우, 화면에 표시
-    if (facts) {
-      displayFacts(facts);
-    }
-  });
-});
+  const facts = await fetchFacts(count);
+  //  4. 응답 데이터가 있을 경우, 화면에 표시
+  if (facts) {
+    displayFacts(facts);
+  }
+}); // ← 여기 괄호 + 세미콜론 꼭 필요!
 
 // 페이지 로드시 자동으로 하나의 고양이 사실 가져오기
 window.addEventListener("load", () => {
