@@ -45,6 +45,7 @@
 	    <Hello thWhat= "World" />,
         document.getElementById('root')
     ); 
+    ```
 - JSX를 사용하지 않은 코드
     ``` 
     class Hello extends React.Component { 
@@ -55,7 +56,8 @@
     ReactDOM.render(
 	    React.createElement(Hello, { toWhat: 'World'}, null),
         document.getElementById('root')
-    ); 
+    );
+    ``` 
 - JSX 사용하면 내부적으로 React.createElement 실행 -> React Element 객체 생성됨
 - React.createElement 
     - 파라미터 type : html 태그 또는 다른 React Element
