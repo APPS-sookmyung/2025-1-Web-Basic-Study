@@ -5,13 +5,13 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 // eslint-disable-next-line
-import CommentList from "./chapter_05/CommentList";
+import NotificationList from "./chapter_06/NotificationList";
 
 const root = createRoot(document.getElementById("root"));
 
 root.render(
   <React.StrictMode>
-    <CommentList />
+    <NotificationList />
   </React.StrictMode>,
   document.getElementById("root")
 );
