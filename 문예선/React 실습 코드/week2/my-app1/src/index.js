@@ -6,13 +6,15 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 // eslint-disable-next-line
 import NotificationList from "./chapter_06/NotificationList";
-import Accommodate from "./chapter_07/Accommodate";
+// eslint-disable-next-line
+import Accommodaten from "./chapter_07/Accommodate";
+import ConfirmButton from "./chapter_08/ConfirmButton";
 
 const root = createRoot(document.getElementById("root"));
 
 root.render(
   <React.StrictMode>
-    <Accommodate />
+    <ConfirmButton />
   </React.StrictMode>,
   document.getElementById("root")
 );
