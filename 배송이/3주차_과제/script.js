@@ -1,4 +1,3 @@
-// DOM 요소 선택
 const languageSelect = document.getElementById("language");
 const getFactBtn = document.getElementById("getFactBtn");
 const getMultipleBtn = document.getElementById("getMultipleBtn");
@@ -7,7 +6,6 @@ const factContainer = document.getElementById("factContainer");
 const loading = document.getElementById("loading");
 const error = document.getElementById("error");
 
-// API URL
 const API_URL = "https://meowfacts.herokuapp.com";
 
 // 유틸리티 함수들
@@ -121,7 +119,6 @@ getMultipleBtn.addEventListener("click", async () => {
   }
 });
 
-// 페이지 로드시 자동으로 하나의 고양이 사실 가져오기
 window.addEventListener("load", () => {
   getFactBtn.click();
-});
+});  
