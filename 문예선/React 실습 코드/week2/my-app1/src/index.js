@@ -8,13 +8,25 @@ import reportWebVitals from "./reportWebVitals";
 import NotificationList from "./chapter_06/NotificationList";
 // eslint-disable-next-line
 import Accommodaten from "./chapter_07/Accommodate";
+// eslint-disable-next-line
 import ConfirmButton from "./chapter_08/ConfirmButton";
+// eslint-disable-next-line
+import LandingPage from "./chapter_09/LandingPage";
+// eslint-disable-next-line
+import AttendanceBook from "./chapter_10/AttendanceBook";
+// eslint-disable-next-line
+import SignUp from "./chapter_11/SignUp";
+// eslint-disable-next-line
+import Calculator from "./chapter_12/Caculator";
+// eslint-disable-next-line
+import ProfileCard from "./chapter_13/ProfileCard";
+import DarkOrLight from "./chapter_14/DarkOrLight";
 
 const root = createRoot(document.getElementById("root"));
 
 root.render(
   <React.StrictMode>
-    <ConfirmButton />
+    <DarkOrLight />
   </React.StrictMode>,
   document.getElementById("root")
 );
