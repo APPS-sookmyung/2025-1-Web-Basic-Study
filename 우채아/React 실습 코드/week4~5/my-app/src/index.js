@@ -9,6 +9,12 @@ import CommentList from './chapter_05/CommentList';
 import NotificationList from './chapter_06/NotificationList';
 import Accommodate from './chapter_07/Accommodate';
 import ConfirmButton from './chapter_08/ConfirmButton';
+import LandingPage from './chapter_09/LandingPage';
+import AttendanceBook from './chapter_10/AttendanceBook';
+import SignUp from './chapter_11/SignUp';
+import Calculator from './chapter_12/Calculator';
+import ProfileCard from './chapter_13/ProfileCard';
+import DarkOrLight from './chapter_14/DarkOrLight';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -49,9 +55,51 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 // );
 
 //Chapter_08
+// root.render(
+//   <React.StrictMode>
+//     <ConfirmButton />
+//   </React.StrictMode>
+// );
+
+//Chapter_09
+// root.render(
+//   <React.StrictMode>
+//     <LandingPage />
+//   </React.StrictMode>
+// );
+
+//Chapter_10
+// root.render(
+//   <React.StrictMode>
+//     <AttendanceBook />
+//   </React.StrictMode>
+// );
+
+//Chapter_11
+// root.render(
+//   <React.StrictMode>
+//     <SignUp />
+//   </React.StrictMode>
+// );
+
+//Chapter_12
+// root.render(
+//   <React.StrictMode>
+//     <Calculator />
+//   </React.StrictMode>
+// );
+
+//Chapter_13
+// root.render(
+//   <React.StrictMode>
+//     <ProfileCard />
+//   </React.StrictMode>
+// );
+
+//Chapter_14
 root.render(
   <React.StrictMode>
-    <ConfirmButton />
+    <DarkOrLight />
   </React.StrictMode>
 );
 // If you want to start measuring performance in your app, pass a function
