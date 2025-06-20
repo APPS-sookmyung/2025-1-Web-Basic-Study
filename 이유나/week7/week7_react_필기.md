@@ -1,4 +1,4 @@
-## 15강. styling
+## 15강. styling.
 
 ### css와 selector
 
